@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout25"
+        android:paddingRight="20dp"
+        android:paddingLeft="10dp" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton8"
+                android:src="@drawable/rgmslogoandroid"
+                android:layout_weight="2"
+                android:background="#00000000"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton16"
+                android:src="@drawable/search_icon"
+                android:scaleType="fitCenter"
+                android:layout_weight="5"
+                android:background="#00000000" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton17"
+                android:src="@drawable/pignon"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:focusable="true"
+                android:clickable="true"
+                android:focusableInTouchMode="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView9"
+        android:src="@drawable/whiteline"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/linearLayout25"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout25"
+        android:gravity="center"
+        android:id="@+id/linearLayout26">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/welcomeMessage"
+            android:layout_below="@+id/imageView9"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:paddingBottom="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout26"
+        android:gravity="center"
+        android:id="@+id/linearLayout27"
+        android:paddingBottom="20dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton22"
+            android:src="@drawable/viewpatientdetail"
+            android:background="#00000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout27"
+        android:id="@+id/linearLayout28">
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton23"
+            android:src="@drawable/viewcalendarr"
+            android:background="#00000000"
+            android:paddingBottom="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout28"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton24"
+            android:src="@drawable/contactadmin"
+            android:background="#00000000" />
+    </LinearLayout>
+</RelativeLayout>

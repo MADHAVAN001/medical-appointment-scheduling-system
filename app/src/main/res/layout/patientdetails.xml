@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <ImageButton
+                android:id="@+id/imageButton25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/rgmslogoandroid" />
+
+            <ImageButton
+                android:id="@+id/imageButton26"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/search_icon" />
+
+            <ImageButton
+                android:id="@+id/imageButton27"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pignon" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout29"
+        android:paddingLeft="10dp"
+        android:src="@drawable/whiteline" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView10"
+        android:id="@+id/linearLayout30"
+        android:paddingTop="10dp"
+        android:paddingLeft="45dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Home"
+            android:id="@+id/textView16"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="->"
+            android:id="@+id/textView17"
+            android:textColor="#ffffff"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Lookup Patient"
+            android:id="@+id/textView18"
+            android:textColor="#fcfb97" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:layout_below="@+id/linearLayout30"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lookup Patient Records"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:clickable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message"
+        android:gravity="center|center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search by Name:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/editText12"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/textView14"
+            android:layout_weight="3"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/searchBtn"
+            android:src="@drawable/search_icon"
+            android:scaleType="fitCenter"
+            android:layout_weight="3"
+            android:background="#00000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:gravity="center"
+        android:id="@+id/linearLayout2"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="OR"
+            android:id="@+id/textView15"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton28"
+            android:src="@drawable/loadfromcalendar"
+            android:background="#00000000" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:src="@drawable/whiteline"
+        android:layout_above="@+id/message"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

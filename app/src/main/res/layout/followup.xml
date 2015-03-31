@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:id="@+id/linearLayout38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3dp" >
+
+            <ImageButton
+                android:id="@+id/imageButton38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/rgmslogoandroid" />
+
+            <ImageButton
+                android:id="@+id/imageButton39"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/search_icon" />
+
+            <ImageButton
+                android:id="@+id/imageButton40"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pignon" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:src="@drawable/whiteline"
+        android:layout_below="@+id/linearLayout38"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout39"
+        android:paddingTop="10dp"
+        android:paddingLeft="45dp"
+        android:layout_below="@+id/linearLayout38"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Home"
+            android:id="@+id/textView41"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="->"
+            android:id="@+id/textView42"
+            android:textColor="#ffffff"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Lookup Patient"
+            android:id="@+id/textView43"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="->"
+            android:id="@+id/textView44"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Search Results"
+            android:id="@+id/textView45"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="->"
+            android:id="@+id/textView46"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="45dp"
+        android:id="@+id/linearLayout40"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/linearLayout39"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Patient"
+            android:id="@+id/textView47"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="->"
+            android:id="@+id/textView48"
+            android:textColor="#ffffff"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Follow-up Appointment"
+            android:id="@+id/textView49"
+            android:textColor="#fcfb97" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:src="@drawable/whiteline"
+        android:layout_below="@+id/linearLayout40"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/imageView21"
+        android:paddingLeft="45dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout41"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            android:layout_below="@+id/linearLayout30"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" >
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Follow-up Appointment"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Select Date: "
+                android:id="@+id/textView50"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageButton41"
+                android:src="@drawable/calend"
+                android:scaleType="fitCenter"
+                android:background="#00000000" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView51"
+            android:textColor="#fcfb97"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Select Time Slot:"
+            android:id="@+id/textView52"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:popupBackground="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Select Medical Diagnosis: "
+            android:id="@+id/textView55"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner3"
+            android:popupBackground="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Add alternative reasons: +"
+            android:id="@+id/textView56"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText13"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText14"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText15"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="20dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton42"
+                android:src="@drawable/finish"
+                android:background="#00000000" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

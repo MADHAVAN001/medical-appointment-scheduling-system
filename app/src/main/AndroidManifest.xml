@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.keith.rgms1" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="RGMedicalSystems"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".news"
+            android:label="RGMedicalSystems" >
+
+        </activity>
+        <activity
+            android:label="RGMedicalSystems"
+            android:name=".login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".register" android:label="RGMedicalSystems">
+        </activity>
+        <activity android:name=".createAppt" android:label="RGMedicalSystems"></activity>
+<activity android:name=".appointment" android:label="RGMedicalSystems"></activity>
+        <activity android:name=".logs" android:label="RGMedicalSystems"></activity>
+        <activity android:name=".staffHomePage" android:label="RGMedicalSystems"></activity>
+        <activity android:name=".patientDetails" android:label="RGMedicalSystems"></activity>
+        <activity android:name=".viewPatientDetails" android:label="RGMedicalSystems"></activity>
+        <activity android:name=".selectedPatient" android:label="RGMedicalSystems"></activity>
+        <activity android:name=".followup" android:label="RGMedicalSystems"></activity>
+        <activity android:name=".notification" android:label="RGMedicalSystems"></activity>
+        <activity android:name=".notificationDisplay" android:label="RGMedicalSystems"></activity>
+
+    </application>
+
+</manifest>

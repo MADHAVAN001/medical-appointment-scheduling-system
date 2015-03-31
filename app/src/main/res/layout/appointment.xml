@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout17"
+        android:paddingRight="20dp"
+        android:paddingLeft="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton15"
+                android:src="@drawable/rgmslogoandroid"
+                android:layout_weight="2"
+                android:background="#00000000"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/searchButton"
+                android:src="@drawable/search_icon"
+                android:scaleType="fitCenter"
+                android:layout_weight="5"
+                android:background="#00000000" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/settingsButton"
+                android:src="@drawable/pignon"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:focusable="true"
+                android:clickable="true"
+                android:focusableInTouchMode="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/whiteline"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/linearLayout17" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:paddingLeft="45dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/linearLayout18">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/webButton"
+            android:src="@drawable/webnews"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:adjustViewBounds="true"
+            android:layout_weight="7" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/apptButton"
+            android:src="@drawable/clocl1"
+            android:layout_weight="8"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:adjustViewBounds="false" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/logsButton"
+            android:src="@drawable/folderfiles"
+            android:layout_weight="2"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:adjustViewBounds="false" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/globeButton"
+            android:src="@drawable/globe"
+            android:layout_weight="2"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:adjustViewBounds="false" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/menuButton"
+            android:src="@drawable/menu_alt"
+            android:layout_weight="6"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:adjustViewBounds="true" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@drawable/whiteline"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/linearLayout18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:id="@+id/linearLayout19">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton18"
+            android:src="@drawable/appointment5"
+            android:background="#00000000"
+            android:paddingRight="10dp"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton19"
+            android:src="@drawable/appointment2"
+            android:background="#00000000"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout19"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton20"
+            android:src="@drawable/appointment4"
+            android:background="#00000000"
+            android:paddingRight="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton21"
+            android:background="#00000000"
+            android:src="@drawable/appointment3" />
+    </LinearLayout>
+</RelativeLayout>
