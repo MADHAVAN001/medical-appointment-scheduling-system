@@ -137,87 +137,19 @@
         android:layout_centerHorizontal="true" />
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_below="@+id/imageView8"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:id="@+id/layo">
 
-        <LinearLayout
-            android:orientation="horizontal"
+        <ViewFlipper
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="45dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:textSize="25dp"
-                android:text="Select type:"
-                android:id="@+id/typeTextView"/>
-            <Spinner
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:popupBackground="#000000"
-                android:id="@+id/typeSpinner"></Spinner>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="45dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:textSize="25dp"
-                android:text="Select doctor:"
-                android:id="@+id/doctorTextView"/>
-            <Spinner
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:popupBackground="#000000"
-                android:id="@+id/doctorSpinner"></Spinner>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="45dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:textSize="25dp"
-                android:text="Select date:"
-                android:id="@+id/dateTextView"/>
-            <Spinner
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:popupBackground="#000000"
-                android:id="@+id/dateSpinner"></Spinner>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="45dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:textSize="25dp"
-                android:text="Select time:"
-                android:id="@+id/timeTextView" />
-
-            <Spinner
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:popupBackground="#000000"
-                android:id="@+id/timeSpinner"></Spinner>
-        </LinearLayout>
+            android:id="@+id/flip"
+            android:layout_gravity="center_horizontal" />
 
     </LinearLayout>
 

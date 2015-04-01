@@ -71,7 +71,7 @@
         android:paddingTop="5dp"
         android:paddingRight="10dp"
         android:paddingBottom="5dp"
-        android:id="@+id/linearLayout24"
+        android:id="@+id/topheader"
         android:layout_below="@+id/imageView7"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true">
@@ -90,7 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:id="@+id/apptButton"
-            android:src="@drawable/clocl1"
+            android:src="@drawable/clocl"
             android:layout_weight="8"
             android:scaleType="fitCenter"
             android:background="#00000000"
@@ -100,7 +100,7 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:id="@+id/logsButton"
-            android:src="@drawable/folderfiles"
+            android:src="@drawable/folderfiles1"
             android:layout_weight="2"
             android:scaleType="fitCenter"
             android:background="#00000000"
@@ -133,92 +133,158 @@
         android:id="@+id/imageView8"
         android:src="@drawable/whiteline"
         android:paddingLeft="10dp"
-        android:layout_below="@+id/linearLayout24"
+        android:layout_below="@+id/topheader"
         android:layout_centerHorizontal="true" />
-
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/topheader"
+    android:paddingTop="30dp"
+    android:id = "@+id/medicineUI">
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/imageView8"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topheader"
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="45dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:textSize="25dp"
-                android:text="Select type:"
-                android:id="@+id/typeTextView"/>
-            <Spinner
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:popupBackground="#000000"
-                android:id="@+id/typeSpinner"></Spinner>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="45dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:textSize="25dp"
-                android:text="Select doctor:"
-                android:id="@+id/doctorTextView"/>
-            <Spinner
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:popupBackground="#000000"
-                android:id="@+id/doctorSpinner"></Spinner>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="45dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:textSize="25dp"
-                android:text="Select date:"
-                android:id="@+id/dateTextView"/>
-            <Spinner
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:popupBackground="#000000"
-                android:id="@+id/dateSpinner"></Spinner>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="45dp">
+        >
+    <ImageButton
+        android:src = "@drawable/left"
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:textSize="25dp"
-                android:text="Select time:"
-                android:id="@+id/timeTextView" />
+        android:layout_height="44dp"
+        android:layout_width="50dp"
+        android:scaleType="centerCrop"
+        android:background = "#00000000"
+        android:id = "@+id/left"/>
+    <TextView
+        android:text = "Medicine Name"
+        android:paddingLeft="145dp"
+        android:layout_height="wrap_content"
 
-            <Spinner
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:popupBackground="#000000"
-                android:id="@+id/timeSpinner"></Spinner>
+        android:background="#24FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#fcfb90"
+        android:textStyle = "bold"
+        android:textSize = "28dp"
+        android:paddingBottom="14dp"
+        android:id = "@+id/medicine"
+        android:paddingRight="145dp"
+        />
+        <ImageButton
+            android:src = "@drawable/right"
+
+            android:layout_height="44dp"
+            android:layout_width="50dp"
+            android:scaleType="centerCrop"
+            android:background = "#00000000"
+            android:id = "@+id/right"/>
         </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below = "@id/topheader">
 
+    <TextView
+        android:text = "Intake Schedule : "
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="10dp"
+        android:textColor="#FFFFFF"
+        android:textStyle = "bold"
+        android:textSize = "25dp"
+        android:paddingBottom="14dp"
+        /></LinearLayout>
+    <ImageView
+        android:alpha = "0.93"
+        android:paddingBottom="20dp"
+        android:background = "#2A00FFCC"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:src="@drawable/medical"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below = "@id/topheader">
+        <TextView
+            android:text = "morning"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="left"
+            android:textColor="#CEF6CE"
+            android:textStyle = "bold"
+            android:textSize = "22dp"
+            android:paddingLeft="11dp"
+            android:id = "@+id/morning"
+           />
+
+        <TextView
+            android:text = "afternoon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingLeft = "165dp"
+            android:textColor="#CEECF5"
+            android:textStyle = "bold"
+            android:textSize = "22dp"
+            android:id = "@+id/noon"
+            />
+        <TextView
+            android:text = "night"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingLeft = "165dp"
+            android:textColor="#CECEF6"
+            android:textStyle = "bold"
+            android:textSize = "22dp"
+            android:id = "@+id/night"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity = "left"
+        >
+        <TextView
+            android:text = "Intake   : "
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="30dp"
+            android:paddingLeft = "15dp"
+            android:textColor="#FFFFFF"
+            android:textStyle = "bold"
+            android:textSize = "25dp"
+            />
+        <TextView
+            android:text = "Intake Dosage"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="30dp"
+            android:paddingLeft = "15dp"
+            android:textColor="#FFFFFF"
+            android:textStyle = "bold"
+            android:textSize = "25dp"
+            android:id = "@+id/dosage"
+            />
+
+        </LinearLayout>
+    <TextView
+        android:text = "Take your medicine every time on intake schedule..\n\n\n\n\n\n\n Hope you will get well soon :)..\n Thank you!"
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="90dp"
+        android:paddingLeft = "15dp"
+        android:textColor="#FFFFFF"
+        android:textStyle = "bold"
+        android:textSize = "25dp"
+
+        />
     </LinearLayout>
 
 </RelativeLayout>

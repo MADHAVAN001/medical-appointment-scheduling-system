@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/doctoruibanner"
+        android:paddingRight="20dp"
+        android:paddingLeft="10dp" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:paddingBottom="90dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton6"
+                android:src="@drawable/rgmslogoandroid"
+                android:layout_weight="2"
+                android:background="#00000000"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton7"
+                android:src="@drawable/search_icon"
+                android:scaleType="fitCenter"
+                android:layout_weight="5"
+                android:background="#00000000" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/settingsButton"
+                android:src="@drawable/pignon"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:focusable="true"
+                android:clickable="true"
+                android:focusableInTouchMode="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView99"
+        android:src="@drawable/whiteline"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/doctoruibanner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView100"
+        android:src="@drawable/whiteline"
+        android:paddingLeft="10dp"
+
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/doctoruibanner"
+        android:paddingTop="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/doctorui"
+        android:paddingRight="20dp"
+        android:paddingLeft="10dp" >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below = "@id/doctoruibanner"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/doctorname"
+
+            android:gravity = "center_horizontal" >
+            <TextView android:id = "@+id/doctortext"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable = "true"
+                android:text = "Dr. Name"
+                android:textColor="#A9F5F2"
+                android:textSize="43dp"
+                android:textStyle = "bold"
+                ></TextView>
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width = "match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below = "@+id/doctorui">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="55dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+
+            android:textColor="#FFFFFF"
+            android:textSize = "35dp"
+            android:textStyle="bold"
+            android:text = "Select Patient : "/>
+    <Spinner
+        android:id="@+id/select_patient"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" /></LinearLayout>
+    <LinearLayout
+        android:paddingTop="90dp"
+        android:orientation="horizontal"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content">
+<TextView
+    android:text = "Name                 :   "
+    android:layout_height="wrap_content"
+
+    android:layout_width="wrap_content"
+    android:textColor="#A9E2F3"
+    android:textStyle="bold"
+    android:textSize = "31dp"/>
+        <TextView
+            android:text = "FirstName LastName"
+            android:id = "@+id/patientname"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#D0F5A9"
+            android:textSize = "32dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp">
+        <TextView
+            android:text = "Address             :   "
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#A9E2F3"
+            android:textSize = "31dp"/>
+        <TextView
+            android:text = "address location"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id = "@+id/address"
+            android:textColor="#D0F5A9"
+            android:textSize = "32dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp">
+        <TextView
+            android:text = "Email                  :   "
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#A9E2F3"
+            android:textSize = "31dp"/>
+        <TextView
+            android:text = "email@wensite.com"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id = "@+id/email"
+            android:textColor="#D0F5A9"
+            android:textSize = "32dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="24dp"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text = "Phone                 :   "
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#A9E2F3"
+
+            android:textSize = "31dp"/>
+        <TextView
+            android:text = "Phone Number"
+            android:layout_height="wrap_content"
+
+            android:layout_width="match_parent"
+            android:textColor="#D0F5A9"
+            android:id = "@+id/phone"
+            android:textSize = "32dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="24dp"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text = "Date of Birth      :   "
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#A9E2F3"
+            android:textSize = "31dp"/>
+        <TextView
+            android:text = "dd/mm/yy"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#D0F5A9"
+            android:id = "@+id/dob"
+            android:textSize = "32dp"
+            />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

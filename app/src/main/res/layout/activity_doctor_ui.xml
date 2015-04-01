@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/doctoruibanner"
+        android:paddingRight="20dp"
+        android:paddingLeft="10dp" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:paddingBottom="90dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton6"
+                android:src="@drawable/rgmslogoandroid"
+                android:layout_weight="2"
+                android:background="#00000000"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton7"
+                android:src="@drawable/search_icon"
+                android:scaleType="fitCenter"
+                android:layout_weight="5"
+                android:background="#00000000" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/settingsButton"
+                android:src="@drawable/pignon"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:focusable="true"
+                android:clickable="true"
+                android:focusableInTouchMode="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView99"
+        android:src="@drawable/whiteline"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/doctoruibanner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView100"
+        android:src="@drawable/whiteline"
+        android:paddingLeft="10dp"
+
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/doctoruibanner"
+        android:paddingTop="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/doctorui"
+        android:paddingRight="20dp"
+        android:paddingLeft="10dp" >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/doctoruibanner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/doctorname"
+        android:paddingRight="20dp"
+        android:paddingLeft="40dp" >
+        <TextView android:id = "@+id/doctortext"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable = "true"
+            android:text = "Dr. Name"
+            android:textColor="#A9F5F2"
+            android:textSize="53dp"
+            android:textStyle = "bold"
+            ></TextView>
+        </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:paddingTop= "360dp"
+        android:paddingLeft = "55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageButton
+       android:layout_width="350dp"
+       android:layout_height="57dp"
+        android:scaleType="centerCrop"
+
+        android:background="#00FFFFFF"
+    android:id="@+id/viewPatient"
+    android:src="@drawable/patientdetails"
+        />
+        <ImageButton
+            android:layout_width="355dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop"
+            android:background="#00FFFFFF"
+            android:id="@+id/viewCalendar"
+            android:src="@drawable/calendar"
+            />
+        <ImageButton
+            android:layout_width="372dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:scaleType="centerCrop"
+            android:background="#00FFFFFF"
+            android:id="@+id/contactAdmin"
+            android:src="@drawable/contactadmin"
+            />
+
+
+    </LinearLayout>>
+</RelativeLayout>

@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000">
+    android:background="#000000"
+    android:id = "@+id/viewBillUI">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -65,6 +66,7 @@
 
     <LinearLayout
         android:orientation="horizontal"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="45dp"
@@ -90,7 +92,7 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:id="@+id/apptButton"
-            android:src="@drawable/clocl1"
+            android:src="@drawable/clocl"
             android:layout_weight="8"
             android:scaleType="fitCenter"
             android:background="#00000000"
@@ -100,7 +102,7 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:id="@+id/logsButton"
-            android:src="@drawable/folderfiles"
+            android:src="@drawable/folderfiles1"
             android:layout_weight="2"
             android:scaleType="fitCenter"
             android:background="#00000000"
@@ -126,7 +128,6 @@
             android:background="#00000000"
             android:adjustViewBounds="true" />
     </LinearLayout>
-
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -138,87 +139,43 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/linearLayout24"
+        android:gravity = "center_horizontal"
+        android:paddingLeft="59dp"
+        android:paddingTop="50dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:id="@+id/patientui"
 
+        >
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="45dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:textSize="25dp"
-                android:text="Select type:"
-                android:id="@+id/typeTextView"/>
-            <Spinner
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:popupBackground="#000000"
-                android:id="@+id/typeSpinner"></Spinner>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="45dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:textSize="25dp"
-                android:text="Select doctor:"
-                android:id="@+id/doctorTextView"/>
-            <Spinner
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:popupBackground="#000000"
-                android:id="@+id/doctorSpinner"></Spinner>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="45dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:textSize="25dp"
-                android:text="Select date:"
-                android:id="@+id/dateTextView"/>
-            <Spinner
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:popupBackground="#000000"
-                android:id="@+id/dateSpinner"></Spinner>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="45dp">
+            android:paddingTop="8dp"
 
-            <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/access"
+            android:paddingRight="20dp"
+            android:paddingLeft="95dp" >
+            <TextView android:id = "@+id/accesstext"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:textSize="25dp"
-                android:text="Select time:"
-                android:id="@+id/timeTextView" />
+                android:editable = "true"
+                android:text = "  View Bill History "
+                android:textColor="#F5DA81"
+                android:textSize="33dp"
 
-            <Spinner
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:popupBackground="#000000"
-                android:id="@+id/timeSpinner"></Spinner>
+                android:textStyle = "bold"
+                ></TextView>
         </LinearLayout>
-
     </LinearLayout>
+
+
+
 
 </RelativeLayout>

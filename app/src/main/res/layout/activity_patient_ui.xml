@@ -90,7 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:id="@+id/apptButton"
-            android:src="@drawable/clocl1"
+            android:src="@drawable/clocl"
             android:layout_weight="8"
             android:scaleType="fitCenter"
             android:background="#00000000"
@@ -100,7 +100,7 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:id="@+id/logsButton"
-            android:src="@drawable/folderfiles"
+            android:src="@drawable/folderfiles1"
             android:layout_weight="2"
             android:scaleType="fitCenter"
             android:background="#00000000"
@@ -127,6 +127,43 @@
             android:adjustViewBounds="true" />
     </LinearLayout>
 
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/linearLayout24"
+        android:paddingTop="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/patientui"
+        android:paddingRight="20dp"
+        android:paddingLeft="10dp" >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/access"
+            android:paddingRight="20dp"
+            android:paddingLeft="210dp" >
+            <TextView android:id = "@+id/accesstext"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable = "true"
+                android:text = "Access Log "
+
+                android:textColor="#F5DA81"
+                android:textSize="28.5dp"
+
+                android:textStyle = "bold"
+                ></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -135,90 +172,39 @@
         android:paddingLeft="10dp"
         android:layout_below="@+id/linearLayout24"
         android:layout_centerHorizontal="true" />
-
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/imageView8"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_centerHorizontal="true"
+        android:paddingTop= "360dp"
+        android:paddingLeft = "55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageButton
+        android:layout_width="340dp"
+        android:layout_height="62dp"
+        android:scaleType="centerCrop"
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="45dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:textSize="25dp"
-                android:text="Select type:"
-                android:id="@+id/typeTextView"/>
-            <Spinner
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:popupBackground="#000000"
-                android:id="@+id/typeSpinner"></Spinner>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="45dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:textSize="25dp"
-                android:text="Select doctor:"
-                android:id="@+id/doctorTextView"/>
-            <Spinner
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:popupBackground="#000000"
-                android:id="@+id/doctorSpinner"></Spinner>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="45dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:textSize="25dp"
-                android:text="Select date:"
-                android:id="@+id/dateTextView"/>
-            <Spinner
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:popupBackground="#000000"
-                android:id="@+id/dateSpinner"></Spinner>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="45dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:textSize="25dp"
-                android:text="Select time:"
-                android:id="@+id/timeTextView" />
-
-            <Spinner
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:popupBackground="#000000"
-                android:id="@+id/timeSpinner"></Spinner>
-        </LinearLayout>
-
-    </LinearLayout>
+        android:background="#00FFFFFF"
+        android:id="@+id/viewTreatmentHistory"
+        android:src="@drawable/treatmenthistory"
+        />
+    <ImageButton
+        android:layout_width="340dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="28dp"
+        android:scaleType="centerCrop"
+        android:background="#00FFFFFF"
+        android:id="@+id/viewMedicine"
+        android:src="@drawable/viewmedicine"
+        />
+    <ImageButton
+        android:layout_width="348dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        android:background="#00FFFFFF"
+        android:id="@+id/viewBill"
+        android:src="@drawable/bill"
+        /></LinearLayout>
 
 </RelativeLayout>
