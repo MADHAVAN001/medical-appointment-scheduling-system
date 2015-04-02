@@ -4,6 +4,7 @@ package com.example.keith.rgms1;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -206,6 +207,9 @@ public class createAppt extends ActionBarActivity {
                                             dateSpinner.getSelectedItem().toString(), timeSpinner.getSelectedItem().toString(),
                                             e.getText().toString());
                                     Toast.makeText(createAppt.this, "Appointment created!", Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(createAppt.this, appointment.class);
+                                    startActivity(intent);
+
                                 }
                                 else{
                                     AlertDialog.Builder builder1 = new AlertDialog.Builder(createAppt.this);
@@ -219,12 +223,14 @@ public class createAppt extends ActionBarActivity {
                                                     e.getText().toString());
                                             am.updateSlots(timeSpinner.getSelectedItem().toString(), dateSpinner.getSelectedItemPosition(), doctorSpinner.getSelectedItem().toString());
                                             Toast.makeText(createAppt.this, "Appointment created!", Toast.LENGTH_SHORT).show();
+                                            Intent intent = new Intent(createAppt.this, appointment.class);
+                                            startActivity(intent);
                                         }
                                     });
                                     builder1.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
                                         @Override
                                         public void onClick(DialogInterface dialog, int which) {
-
+                                            return;
                                         }
                                     });
                                     builder1.show();
@@ -240,6 +246,8 @@ public class createAppt extends ActionBarActivity {
                                 dateSpinner.getSelectedItem().toString(), timeSpinner.getSelectedItem().toString(),
                                 e.getText().toString());
                         Toast.makeText(createAppt.this, "Appointment created!", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(createAppt.this, appointment.class);
+                        startActivity(intent);
                     }
 
                 }
