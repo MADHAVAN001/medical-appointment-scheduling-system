@@ -12,11 +12,13 @@ import android.widget.ImageButton;
 public class appointment extends ActionBarActivity {
     ImageButton Createbutton;
     ImageButton Viewapptbutton;
+    ImageButton Listdocsbutton;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.appointment);
         createApptInterface();
-       viewApptInterface();
+        viewApptInterface();
+        listDocsInterface();
     }
 
     public void createApptInterface() {
@@ -37,6 +39,16 @@ public class appointment extends ActionBarActivity {
             public void onClick(View arg0) {
                 Intent intent1 = new Intent(appointment.this, viewAppt.class);
                 startActivity(intent1);
+            }
+        });
+    }
+    public void listDocsInterface(){
+        Listdocsbutton = (ImageButton) findViewById(R.id.imageButton20);
+        Listdocsbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(appointment.this, listDocs.class);
+                startActivity(intent);
             }
         });
     }
