@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout23"
+        android:paddingRight="20dp"
+        android:paddingLeft="10dp" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton6"
+                android:src="@drawable/rgmslogoandroid"
+                android:layout_weight="2"
+                android:background="#00000000"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton7"
+                android:src="@drawable/search_icon"
+                android:scaleType="fitCenter"
+                android:layout_weight="5"
+                android:background="#00000000" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/settingsButton"
+                android:src="@drawable/pignon"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:focusable="true"
+                android:clickable="true"
+                android:focusableInTouchMode="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView7"
+        android:src="@drawable/whiteline"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/linearLayout23"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="45dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/linearLayout24"
+        android:layout_below="@+id/imageView7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newsButton"
+            android:src="@drawable/webnews"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:adjustViewBounds="true"
+            android:layout_weight="7" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/apptButton"
+            android:src="@drawable/clocl1"
+            android:layout_weight="8"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:adjustViewBounds="false" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/logsButton"
+            android:src="@drawable/folderfiles"
+            android:layout_weight="2"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:adjustViewBounds="false" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/globeButton"
+            android:src="@drawable/globe"
+            android:layout_weight="2"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:adjustViewBounds="false" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/menuButton"
+            android:src="@drawable/menu_alt"
+            android:layout_weight="6"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:adjustViewBounds="true" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView8"
+        android:src="@drawable/whiteline"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/linearLayout24"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/imageView8"
+        android:paddingLeft="35dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:id="@+id/linearlayout45">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:text="Singapore"
+            android:gravity="center"
+            android:clickable="true"
+            android:id="@+id/sgTextView"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:text="Malaysia"
+            android:gravity="center"
+            android:clickable="true"
+            android:id="@+id/malTextView"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:text="Thailand"
+            android:gravity="center"
+            android:clickable="true"
+            android:id="@+id/thaiTextView"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/linearlayout45"
+        android:paddingTop="40dp"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="45dp"
+        android:paddingRight="10dp"
+        android:id="@+id/content"/>
+</RelativeLayout>
