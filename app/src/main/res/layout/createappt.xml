@@ -142,7 +142,9 @@
         android:layout_height="fill_parent"
         android:layout_below="@+id/imageView8"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:paddingTop="50dp"
+        android:id="@+id/ll225">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -203,22 +205,53 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="45dp">
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFFFF"
                 android:textSize="25dp"
                 android:text="Select time:"
-                android:id="@+id/timeTextView" />
-
+                android:id="@+id/timeTextView"/>
             <Spinner
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:popupBackground="#000000"
                 android:id="@+id/timeSpinner"></Spinner>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="45dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:text="Enter health problem:"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:editable="true"
+                android:hint="Type health problem...(optional)"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:id="@+id/problemEditText"/>
+        </LinearLayout>
+        <LinearLayout
 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="250dp"
+            android:gravity="center">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Create"
+                    android:visibility="visible"
+                    android:id="@+id/createButton"/>
+        </LinearLayout>
     </LinearLayout>
 
 </RelativeLayout>
