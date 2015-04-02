@@ -4,5 +4,48 @@
     <string name="app_name">RGMS1</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
+    <string name="title_activity_doctor_ui">DoctorUI</string>
+    <string name="title_activity_view_patient">ViewPatient</string>
+    <string name="title_activity_view_bill">ViewBill</string>
+    <string name="title_activity_view_prescription">ViewPrescription</string>
+    <string name="title_activity_view_treatment_history">ViewTreatmentHistory</string>
+    <string name="title_activity_view_calendar">ViewCalendar</string>
+    <string name="title_activity_patient_ui">PatientUI</string>
+    <string name = "viewbill"><u>View Bill</u></string>
+    <string name="title_activity_list_docs">listDocs</string>
+    <string name="Singapore">
+        <u>ENT</u>\n\n
+        1. Dr. Daniel Tyson\n
+        283, Bishan Street 22, Singapore\n\n
+        <u>Women\'s Services</u>\n\n
+        1. Dr. Nick Taylor\n
+        No. 72, 11 Kim Keat Road, Singapore\n\n
+        <u>Dental Services</u>\n\n
+        1. Adam O\'Sullivan\n
+        59, New Upper Changi Road, Singapore\n
+    </string>
+    <string name="Malaysia">
+        <u>ENT</u>\n\n
+        1. Dr. Raymond Lee\n
+        No. 2, Jalan Inti Sari Perdana, Kuala Lumpur\n\n
+        <u>Women\'s Services</u>\n\n
+        1. Dr. Charles Smith\n
+        Jaya 33, Pg-13a, Jalan Semangat, Petaling Jaya, Malaysia\n\n
+        <u>Dental Services</u>\n\n
+        1. Dr. Neal Williams\n
+        No.18, Jalan Kiara 3, Mont Kiara, Kuala Lumpur\n\n
+    </string>
+    <string name="Thailand">
+        <u>ENT</u>\n\n
+        1. Dr. Octopus Sea\n
+        998, Piyavate Hospital, Huai Khwang, Thailand\n\n
+        <u>Women\'s Services</u>\n\n
+        1. Dr. Carl Son\n
+        20 Inthamara Samsen Nai, Phaya Thai, Bangkok, Thailand\n\n
+        <u>Dental Services</u>\n\n
+        1. Dr. Lincoln Burrows\n
+        60/4 Ramkhamheang Road Bangkapi, Bangkok, Thailand\n\n
+    </string>
+    <string name="title_activity_view_appt">viewAppt</string>
+    <string name="title_activity_reschedule_app">rescheduleApp</string>
 </resources>
