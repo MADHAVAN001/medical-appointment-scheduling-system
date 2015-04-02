@@ -142,112 +142,123 @@
         android:id="@+id/flip"
         android:layout_below="@+id/imageView8">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="100dp"
-
-        android:id="@+id/linearLayout42">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/linearLayout100"
-        android:background="#FFFF00">
         <LinearLayout
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="3">
-            <ImageView
-                android:layout_width="220dp"
-                android:layout_height="250dp"
-                android:id="@+id/doctorImage"
-                android:src="@drawable/woman"
-                />
-            <EditText
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="100dp"
+
+            android:id="@+id/linearLayout42">
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_width="fill_parent"
-                android:text="Dr. Abc Def"
-                android:gravity="center"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/dc1"
-                android:editable="false"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="2">
-                <EditText
-                    android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout100"
+                android:background="#FFFF00">
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TIME"
-                    android:gravity="center"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:layout_weight="1"
-                    android:id="@+id/tp1"
-                    android:editable="false"/>
-                <EditText
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="DAY AND DATE"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:gravity="center"
-                    android:layout_weight="2"
-                    android:id="@+id/tp2"
-                    android:editable="false"/>
-                <EditText
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="LOCATION"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:gravity="center"
-                    android:layout_weight="3"
-                    android:id="@+id/tp3"
-                    android:editable="false"/>
-        </LinearLayout>
+                    android:orientation="vertical"
+                    android:layout_weight="3">
+                    <ImageView
+                        android:layout_width="220dp"
+                        android:layout_height="250dp"
+                        android:id="@+id/doctorImage"
+                        android:src="@drawable/woman"
+                        />
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:text="Dr. Abc Def"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/dc1"
+                        android:editable="false"/>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFFF00"
-        >
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:text="Appointment Confirmation ID: "
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:editable="false"/>
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:text="0vbd134"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:gravity="center"
-            android:id="@+id/tp4"
-            android:editable="false"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2">
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TIME"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_weight="1"
+                        android:id="@+id/tp1"
+                        android:editable="false"/>
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DAY AND DATE"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:gravity="center"
+                        android:layout_weight="2"
+                        android:id="@+id/tp2"
+                        android:editable="false"/>
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LOCATION"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:gravity="center"
+                        android:layout_weight="3"
+                        android:id="@+id/tp3"
+                        android:editable="false"/>
+                </LinearLayout>
 
-    </LinearLayout>
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="100dp"
-            android:background="#000000"
-            android:orientation="horizontal">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Reschedule"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="#FFFFFF"/>
             </LinearLayout>
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFF00"
+                >
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Appointment Confirmation ID: "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:editable="false"/>
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="0vbd134"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="center"
+                    android:id="@+id/tp4"
+                    android:editable="false"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="100dp"
+                android:background="#000000"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reschedule"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginRight="20dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:id="@+id/reschedule1"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Delete  "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:id="@+id/delete1"/>
+            </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -262,7 +273,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:id="@+id/linearLayout100"
+                android:id="@+id/linearLayout101"
                 android:background="#FFFF00">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -340,6 +351,29 @@
                     android:editable="false"/>
 
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="100dp"
+                android:background="#000000"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reschedule"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginRight="20dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:id="@+id/reschedule2"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Delete  "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:id="@+id/delete2"/>
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -355,7 +389,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:id="@+id/linearLayout100"
+                android:id="@+id/linearLayout102"
                 android:background="#FFFF00">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -432,6 +466,29 @@
                     android:id="@+id/temp11"
                     android:editable="false"/>
 
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="100dp"
+                android:background="#000000"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reschedule"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginRight="20dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:id="@+id/reschedule3"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Delete  "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:id="@+id/delete3"/>
             </LinearLayout>
         </LinearLayout>
 
