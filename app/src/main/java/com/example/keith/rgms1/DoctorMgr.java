@@ -16,6 +16,24 @@ public class DoctorMgr {
     public interface Callback<T>{
         void done(T result);
     }
+    public void getDoctor(String doc, final Callback<ParseObject> callback){
+        int i = doc.indexOf(' ');
+        String firstName = doc.substring(0, i);
+        String lastName = doc.substring(i);
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Doctor");
+        query.whereEqualTo("firstname", firstName);
+        query.whereEqualTo("lastname", lastName.trim());
+        Log.d("F", firstName);
+        Log.d("L",lastName);
+        query.getFirstInBackground(new GetCallback<ParseObject>() {
+            @Override
+            public void done(ParseObject parseObject, ParseException e) {
+                if (e == null) {
+                    callback.done(parseObject);
+                    }
+                }
+        });
+    }
     public void retrieveDoctorDetails(String username, final Callback<ArrayList<String>> callback){
         ParseQuery<ParseObject> query = ParseQuery.getQuery(doctor);
         query.whereEqualTo("username", username);
