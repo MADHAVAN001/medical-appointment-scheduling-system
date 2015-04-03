@@ -36,7 +36,9 @@ public class createAppt extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.createappt);
+        final NotificationGenerator ng = new NotificationGenerator();
         final AppointmentMgr am = new AppointmentMgr();
+        final DoctorMgr dm = new DoctorMgr();
         SharedPreferences pref = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
         final String username = pref.getString("username","");
 
@@ -206,6 +208,15 @@ public class createAppt extends ActionBarActivity {
                                     am.addApp(username, typeSpinner.getSelectedItem().toString(), doctorSpinner.getSelectedItem().toString(),
                                             dateSpinner.getSelectedItem().toString(), timeSpinner.getSelectedItem().toString(),
                                             e.getText().toString());
+                                    dm.getDoctor(doctorSpinner.getSelectedItem().toString(), new DoctorMgr.Callback<ParseObject>() {
+                                        @Override
+                                        public void done(ParseObject result) {
+                                            ng.generateNotification(username, "You have an appointment!", "Appointment at " + timeSpinner.getSelectedItem().toString() +
+                                                            " on " + dateSpinner.getSelectedItem().toString() + " with Dr. " + doctorSpinner.getSelectedItem().toString(), dateSpinner.getSelectedItem().toString(),
+                                                    timeSpinner.getSelectedItem().toString(), "", "", result.getString("username"));
+                                        }
+                                    });
+
                                     Toast.makeText(createAppt.this, "Appointment created!", Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent(createAppt.this, appointment.class);
                                     startActivity(intent);
@@ -223,6 +234,14 @@ public class createAppt extends ActionBarActivity {
                                                     e.getText().toString());
                                             am.updateSlots(timeSpinner.getSelectedItem().toString(), dateSpinner.getSelectedItemPosition(), doctorSpinner.getSelectedItem().toString());
                                             Toast.makeText(createAppt.this, "Appointment created!", Toast.LENGTH_SHORT).show();
+                                            dm.getDoctor(doctorSpinner.getSelectedItem().toString(), new DoctorMgr.Callback<ParseObject>() {
+                                                @Override
+                                                public void done(ParseObject result) {
+                                                    ng.generateNotification(username, "You have an appointment!", "Appointment at " + timeSpinner.getSelectedItem().toString() +
+                                                                    " on " + dateSpinner.getSelectedItem().toString() + " with Dr. " + doctorSpinner.getSelectedItem().toString(), dateSpinner.getSelectedItem().toString(),
+                                                            timeSpinner.getSelectedItem().toString(), "", "", result.getString("username"));
+                                                }
+                                            });
                                             Intent intent = new Intent(createAppt.this, appointment.class);
                                             startActivity(intent);
                                         }
@@ -246,6 +265,14 @@ public class createAppt extends ActionBarActivity {
                                 dateSpinner.getSelectedItem().toString(), timeSpinner.getSelectedItem().toString(),
                                 e.getText().toString());
                         Toast.makeText(createAppt.this, "Appointment created!", Toast.LENGTH_SHORT).show();
+                        dm.getDoctor(doctorSpinner.getSelectedItem().toString(), new DoctorMgr.Callback<ParseObject>() {
+                            @Override
+                            public void done(ParseObject result) {
+                                ng.generateNotification(username, "You have an appointment!", "Appointment at " + timeSpinner.getSelectedItem().toString() +
+                                                " on " + dateSpinner.getSelectedItem().toString() + " with Dr. " + doctorSpinner.getSelectedItem().toString(), dateSpinner.getSelectedItem().toString(),
+                                        timeSpinner.getSelectedItem().toString(), "", "", result.getString("username"));
+                            }
+                        });
                         Intent intent = new Intent(createAppt.this, appointment.class);
                         startActivity(intent);
                     }
