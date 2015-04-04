@@ -21,6 +21,9 @@ import android.widget.LinearLayout;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.content.SharedPreferences;
+
+import com.parse.ParseObject;
+
 /**
  * Created by Madhavan on 27/3/2015.
  */
@@ -34,6 +37,8 @@ public class viewAppt extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.viewappt_1);
 
+        final DoctorMgr dm = new DoctorMgr();
+        final NotificationGenerator ng = new NotificationGenerator();
         final TextView textElement, textElement1, textElement2, textElement3, textElement4;
         viewFlipper = (ViewFlipper) findViewById(R.id.flip);
         final AppointmentMgr am = new AppointmentMgr();
@@ -132,6 +137,14 @@ public class viewAppt extends ActionBarActivity {
                         String appid = textElement2.getText().toString();
                         am.deleteAppointment(appid);
                         Toast.makeText(viewAppt.this, "Appointment Deleted!", Toast.LENGTH_SHORT).show();
+                        dm.getDoctor(textElement3.getText().toString(), new DoctorMgr.Callback<ParseObject>() {
+                            @Override
+                            public void done(ParseObject result) {
+                                ng.generateNotification(username, "Appointment cancelled!", "Your appointment with Dr. "+textElement3.getText().toString()+
+                                        " has been successfully cancelled", textElement1.getText().toString(),
+                                        textElement.getText().toString(), "", "", result.getString("username"));
+                            }
+                        });
                         Intent intent = new Intent(viewAppt.this, viewAppt.class);
                         startActivity(intent);
                     }
@@ -159,6 +172,14 @@ public class viewAppt extends ActionBarActivity {
                         String appid = textElement7.getText().toString();
                         am.deleteAppointment(appid);
                         Toast.makeText(viewAppt.this, "Appointment Deleted!", Toast.LENGTH_SHORT).show();
+                        dm.getDoctor(textElement8.getText().toString(), new DoctorMgr.Callback<ParseObject>() {
+                            @Override
+                            public void done(ParseObject result) {
+                                ng.generateNotification(username, "Appointment cancelled!", "Your appointment with Dr. "+textElement8.getText().toString()+
+                                                " has been successfully cancelled", textElement6.getText().toString(),
+                                        textElement5.getText().toString(), "", "", result.getString("username"));
+                            }
+                        });
                         Intent intent = new Intent(viewAppt.this, viewAppt.class);
                         startActivity(intent);
                     }
@@ -186,6 +207,14 @@ public class viewAppt extends ActionBarActivity {
                         String appid = textElement12.getText().toString();
                         am.deleteAppointment(appid);
                         Toast.makeText(viewAppt.this, "Appointment Deleted!", Toast.LENGTH_SHORT).show();
+                        dm.getDoctor(textElement13.getText().toString(), new DoctorMgr.Callback<ParseObject>() {
+                            @Override
+                            public void done(ParseObject result) {
+                                ng.generateNotification(username, "Appointment cancelled!", "Your appointment with Dr. "+textElement13.getText().toString()+
+                                                " has been successfully cancelled", textElement11.getText().toString(),
+                                        textElement10.getText().toString(), "", "", result.getString("username"));
+                            }
+                        });
                         Intent intent = new Intent(viewAppt.this, viewAppt.class);
                         startActivity(intent);
                     }
@@ -206,6 +235,8 @@ public class viewAppt extends ActionBarActivity {
                 Intent intent = new Intent(viewAppt.this, rescheduleApp.class);
                 intent.putExtra("AppID", textElement2.getText().toString());
                 intent.putExtra("DocName", textElement3.getText().toString());
+                intent.putExtra("Time", textElement.getText().toString());
+                intent.putExtra("Date", textElement1.getText().toString());
                 startActivity(intent);
             }
         });
@@ -216,6 +247,8 @@ public class viewAppt extends ActionBarActivity {
                 Intent intent = new Intent(viewAppt.this, rescheduleApp.class);
                 intent.putExtra("AppID", textElement7.getText().toString());
                 intent.putExtra("DocName", textElement8.getText().toString());
+                intent.putExtra("Time", textElement5.getText().toString());
+                intent.putExtra("Date", textElement6.getText().toString());
                 startActivity(intent);
             }
         });
@@ -224,8 +257,10 @@ public class viewAppt extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(viewAppt.this, rescheduleApp.class);
-                intent.putExtra("AppID", textElement13.getText().toString());
+                intent.putExtra("AppID", textElement12.getText().toString());
                 intent.putExtra("DocName", textElement13.getText().toString());
+                intent.putExtra("Time", textElement10.getText().toString());
+                intent.putExtra("Date", textElement11.getText().toString());
                 startActivity(intent);
             }
         });
