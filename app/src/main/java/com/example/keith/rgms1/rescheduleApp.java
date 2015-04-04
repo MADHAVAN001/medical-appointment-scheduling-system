@@ -1,8 +1,10 @@
 package com.example.keith.rgms1;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,6 +15,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.parse.ParseObject;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -27,9 +31,15 @@ public class rescheduleApp extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.reschedule);
 
+        final DoctorMgr dm = new DoctorMgr();
+        final NotificationGenerator ng = new NotificationGenerator();
         final AppointmentMgr am = new AppointmentMgr();
         final String id = getIntent().getExtras().getString("AppID");
         final String doc = getIntent().getExtras().getString("DocName");
+        final String date = getIntent().getExtras().getString("Date");
+        final String time = getIntent().getExtras().getString("Time");
+        SharedPreferences pref = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        final String username = pref.getString("username","");
 
         ArrayList<String> dates = new ArrayList<String>();
         DateFormat dateFormat = new SimpleDateFormat("EEE, d MMM yyyy");
@@ -111,6 +121,17 @@ public class rescheduleApp extends ActionBarActivity {
                             am.updateSlots(timeSpinner.getSelectedItem().toString(), dateSpinner.getSelectedItemPosition(), doc);
                             am.updateApp(id, dateSpinner.getSelectedItem().toString(), timeSpinner.getSelectedItem().toString());
                             Toast.makeText(rescheduleApp.this, "Appointment rescheduled!", Toast.LENGTH_SHORT).show();
+                            final String subject = "Appointment rescheduled!";
+                            final String message = "Your appointment with Dr. " + doc + " has been rescheduled from " + time +
+                                    " on " + date + " to " + timeSpinner.getSelectedItem().toString() + " on " +
+                                    dateSpinner.getSelectedItem().toString();
+                            dm.getDoctor(doc, new DoctorMgr.Callback<ParseObject>() {
+                                @Override
+                                public void done(ParseObject result) {
+                                    ng.generateNotification(username, subject, message, dateSpinner.getSelectedItem().toString(),
+                                            timeSpinner.getSelectedItem().toString(), "", "", result.getString("username"));
+                                }
+                            });
                             Intent intent = new Intent(rescheduleApp.this, viewAppt.class);
                             startActivity(intent);
                         }
